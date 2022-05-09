@@ -5,6 +5,9 @@
 <!--  기본적인 권한  -->
     <uses-permission android:name="android.permission.INTERNET"/>
 
+<!--  위험 / 민감함 권한  -->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
