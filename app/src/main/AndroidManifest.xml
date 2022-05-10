@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.neppplus.libraryuipractice_20220509">
-
-<!--  기본적인 권한  -->
-    <uses-permission android:name="android.permission.INTERNET"/>
-
-<!--  위험 / 민감함 권한  -->
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!-- 기본적인 권한 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 위험 / 민감함 권한 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -16,17 +13,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LibraryUIPractice_20220509">
         <activity
-            android:name=".ProfileActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".SplashActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
         </activity>
     </application>
 
